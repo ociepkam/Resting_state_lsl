@@ -1,0 +1,11 @@
+screen_color: grey
+fixation_color: black
+fixation_text: +
+fixation_size: 60
+
+text_size: 20
+text_color: black
+
+rest_time: 10
+
+exit_key: f7
