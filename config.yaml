@@ -8,4 +8,6 @@ text_color: black
 
 rest_time: 10
 
+send_lsl_triggers: True
+
 exit_key: f7
