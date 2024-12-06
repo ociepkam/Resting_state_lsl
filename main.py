@@ -34,7 +34,7 @@ def main():
     fixation.setAutoDraw(True)
     win.callOnFlip(clock.reset)
     if config["send_lsl_triggers"]:
-        win.callOnFlip(lsl_outlet.push_sample(x=[1]))
+        win.callOnFlip(lsl_outlet.push_sample, x=[1])
     win.flip()
 
     # mian loop
@@ -44,7 +44,7 @@ def main():
     # cleaning
     fixation.setAutoDraw(False)
     if config["send_lsl_triggers"]:
-        win.callOnFlip(lsl_outlet.push_sample(x=[1]))
+        win.callOnFlip(lsl_outlet.push_sample, x=[1])
     win.flip()
 
     # end screen
